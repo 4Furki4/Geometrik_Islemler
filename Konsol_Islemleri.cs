@@ -7,7 +7,7 @@ namespace Geometrik_Islemler
         public void IlkMesaj()
         {
             System.Console.WriteLine("Lütfen kullanmak istediğiniz geometrik şekli seçiniz:");
-            System.Console.WriteLine("Kare(1)\nDikdörtgen(2)\nÜçgen(3)\nDaire(4)\nKüp(5)\nSilindir(6)\nCevap:");
+            System.Console.Write("Kare(1)\nDikdörtgen(2)\nÜçgen(3)\nDaire(4)\nKüp(5)\nSilindir(6)\nCevap:");
         }
         public string SekilBelirleme()
         {
@@ -56,6 +56,30 @@ namespace Geometrik_Islemler
                 }
             return uzunluklar;
         }
-        
+        public void Islem_Mesajı()
+        {
+            System.Console.WriteLine("(Not: 2D cisimler için hacim geçerli değildir) Lütfen yapmak istediğiniz işlemi seçiniz:");
+            System.Console.Write("Çevre(1)\nAlan(2)\nHacim(3)\nCevap:");
+        }
+        public string SecilenIslem() //Main metodunda buradan gelen işlem tipine göre Geometrik_Islemler sınıfından gereken metot çağırılacak.
+        {
+            int input= int.Parse(Console.ReadLine());
+            string islem ="";
+            switch (input)
+            {
+                case 1:
+                    islem="Çevre";
+                    break;
+                case 2:
+                    islem="Alan";
+                    break;
+                case 3:
+                    islem="Hacim";
+                    break;
+            }
+            return islem;
+        }
+
+
     }
 }
