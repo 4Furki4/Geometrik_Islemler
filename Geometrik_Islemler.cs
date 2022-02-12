@@ -24,15 +24,25 @@ namespace Geometrik_Islemler
             
             return cevre;
         }
-        public int AlanHesaplama(int[] arr)
+        public double AlanHesaplama(int[] arr)
         {
-            int alan =1;
-            if (konsol.SekilBelirleme()!="Silindir" && konsol.SekilBelirleme()!= "Daire")
+            double alan =1;
+            if (konsol.SekilBelirleme()!="Silindir" && konsol.SekilBelirleme()!= "Daire" && konsol.SekilBelirleme()!= "Üçgen")
             {
                 foreach (var item in arr)
                 {
                     alan*=item;
                 }
+            }else if (konsol.SekilBelirleme()=="Silindir") // Alan formülü 2 π.r2+ 2πrh
+            {
+                alan = (2*(Math.PI*Math.Pow(arr[0],2))+ 2*((Math.PI*arr[0]*arr[1])));
+            }else if (konsol.SekilBelirleme()== "Daire")
+            {
+                alan = Math.PI*Math.Pow(arr[0],2);
+            }
+            else if (konsol.SekilBelirleme()== "Üçgen")
+            {
+                alan = (arr[2]*arr[3])/2;
             }
             return alan;
         }

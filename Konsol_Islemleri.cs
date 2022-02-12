@@ -3,6 +3,7 @@ namespace Geometrik_Islemler
 {
     public class Konsol_Islemleri
     {   string Sekil="";
+        
         // Geometrik şekil - kenar bilgileri - hesaplanacak işlem 
         public void IlkMesaj()
         {
@@ -40,7 +41,7 @@ namespace Geometrik_Islemler
         {
             System.Console.WriteLine("Lütfen talimatlara uygun bir şekilde girmek istediğiniz kenar uzunluklarını yazınız:");
             System.Console.WriteLine("Her uzunluğun arasına boşluk bırakınız!");
-            System.Console.WriteLine("Kare ve küp için tek kenarın, dikdörtgen için 2 kenarın, üçgen için üç kenarın, daire için yarı çapının, silindir için  yarı çapın ve yüksekliğin uzunluğunu yazınız.");
+            System.Console.WriteLine("Kare ve küp için tek kenarın, dikdörtgen için 2 kenarın, üçgen için üç kenarın(3. kenar taban olmalı) ve yüksekliğin, daire için yarı çapının, silindir için  yarı çapın ve yüksekliğin uzunluğunu yazınız.");
         }
         public int[] KenarUzunlukları() //kenar uzunluklarını string olarak aldık ve bunları int değere dönüştürüp int dizide depoladık.
         {
@@ -79,7 +80,5 @@ namespace Geometrik_Islemler
             }
             return islem;
         }
-
-
     }
 }
