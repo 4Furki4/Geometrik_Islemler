@@ -1,0 +1,5 @@
+C:\Users\Furkan Cengiz\Desktop\Geometrik_Islemler\obj\Debug\net5.0\Geometrik_Islemler.csproj.AssemblyReference.cache
+C:\Users\Furkan Cengiz\Desktop\Geometrik_Islemler\obj\Debug\net5.0\Geometrik_Islemler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Cengiz\Desktop\Geometrik_Islemler\obj\Debug\net5.0\Geometrik_Islemler.AssemblyInfoInputs.cache
+C:\Users\Furkan Cengiz\Desktop\Geometrik_Islemler\obj\Debug\net5.0\Geometrik_Islemler.AssemblyInfo.cs
+C:\Users\Furkan Cengiz\Desktop\Geometrik_Islemler\obj\Debug\net5.0\Geometrik_Islemler.csproj.CoreCompileInputs.cache
