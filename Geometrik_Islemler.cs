@@ -27,13 +27,17 @@ namespace Geometrik_Islemler
         public double AlanHesaplama(int[] arr,string sekil)
         {
             double alan =1;
-            if (sekil!="Silindir" && sekil!= "Daire" && sekil!= "Üçgen")
+            if (sekil=="Kare")
             {
-                foreach (var item in arr)
-                {
-                    alan*=item;
-                }
-            }else if (sekil=="Silindir") // Alan formülü 2 π.r2+ 2πrh
+                alan=Math.Pow(arr[0],2);
+            }else if(sekil=="Dikdörtgen")
+            {
+                alan = arr[0]*arr[1];
+            }else if (sekil=="Küp")
+            {
+                alan=6*(Math.Pow(arr[0],2));
+            }
+            else if (sekil=="Silindir") // Alan formülü 2 π.r2+ 2πrh
             {
                 alan = (2*(Math.PI*Math.Pow(arr[0],2))+ 2*((Math.PI*arr[0]*arr[1])));
             }else if (sekil== "Daire")
