@@ -80,5 +80,10 @@ namespace Geometrik_Islemler
             }
             return islem;
         }
+        public void SonucuYazdırma(string sekil, string islem,  double sonuc)
+        {
+            System.Console.WriteLine($"Seçmiş olduğunuz {sekil} ile bulunan {islem} sonucu = {sonuc}");
+            
+        }
     }
 }
